@@ -12,7 +12,7 @@
         android:id="@+id/num_tavolo"
         android:layout_width="157dp"
         android:layout_height="80dp"
-        android:layout_marginBottom="528dp"
+        android:layout_marginBottom="504dp"
         android:background="#C1FF8F00"
         android:text=""
         android:textAlignment="center"
@@ -23,7 +23,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/freccia"
+        android:id="@+id/frecciad"
         android:layout_width="130dp"
         android:layout_height="72dp"
         android:layout_marginEnd="4dp"
@@ -33,7 +33,7 @@
         android:onClick="nuovaPagina"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/freccia" />
+        app:srcCompat="@drawable/frecciad" />
 
     <TextView
         android:id="@+id/textView4"
@@ -52,15 +52,16 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="294dp"
-        android:layout_height="275dp"
+        android:layout_width="534dp"
+        android:layout_height="314dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="22dp"
         android:layout_marginRight="22dp"
         android:layout_marginBottom="7dp"
-        android:text="MENU MAXI"
+        android:text="BENVENUTI DA MENU MAXI"
+        android:textAlignment="center"
         android:textColor="#0a0a0a"
         android:textSize="90dp"
         android:textStyle="bold"
@@ -73,13 +74,14 @@
         android:id="@+id/imageView"
         android:layout_width="272dp"
         android:layout_height="249dp"
-        android:layout_marginStart="248dp"
-        android:layout_marginLeft="248dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="524dp"
+        android:layout_marginLeft="524dp"
+        android:layout_marginTop="100dp"
         android:layout_marginBottom="275dp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93"
         app:srcCompat="@drawable/hamburger" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
