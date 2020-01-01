@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RimuoviPortata"></activity>
+        <activity android:name=".RichiestaConfermata"></activity>
+        <activity android:name=".MetodoPagamento" />
+        <activity android:name=".RimuoviPortata" />
         <activity android:name=".OrdineConfermato" />
         <activity android:name=".OrdinePieno" />
         <activity android:name=".OrdineVuoto" />

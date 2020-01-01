@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5D033"
+    tools:context=".MetodoPagamento">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="744dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="811dp"
+        android:text="QUALE METODO DI PAGAMENTO VUOI UTILIZZARE??"
+        android:textAlignment="center"
+        android:textColor="#0a0a0a"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ok"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/icons8_carta_in_uso_100"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/icons8_dollaro_americano_100"
+        tools:layout_editor_absoluteX="493dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+
+    <ImageButton
+        android:id="@+id/freccias"
+        android:layout_width="169dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="632dp"
+        android:layout_marginRight="632dp"
+        android:layout_marginBottom="36dp"
+        android:background="#F5D033"
+        android:onClick=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/freccias" />
+
+    <Button
+        android:id="@+id/conferma"
+        android:layout_width="227dp"
+        android:layout_height="105dp"
+        android:text="CONFERMA"
+        android:textSize="30dp"
+        android:onClick="confermaRichiesta"
+        tools:layout_editor_absoluteX="308dp"
+        tools:layout_editor_absoluteY="825dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

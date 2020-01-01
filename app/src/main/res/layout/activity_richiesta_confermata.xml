@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5D033"
+    tools:context=".RichiestaConfermata">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="785dp"
+        android:layout_height="281dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:text="RICHIESTA DI CONTO CONFERMATA"
+        android:textAlignment="center"
+        android:textColor="#0a0a0a"
+        android:textSize="80dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="436dp"
+        android:layout_marginBottom="21dp"
+        android:text="Lo staff ha appena ricevuto la richiesta di conto, un cameriere raggiungerà il suo tavolo a breve!"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/pushnotifications"
+        tools:layout_editor_absoluteX="334dp"
+        tools:layout_editor_absoluteY="647dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
