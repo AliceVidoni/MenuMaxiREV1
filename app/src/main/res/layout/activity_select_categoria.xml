@@ -13,7 +13,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_gravity="start"
-        android:layout_marginBottom="269dp"
+        android:layout_marginBottom="260dp"
         android:background="@drawable/sfondohome"
         android:drawableRight="@drawable/hamburger"
         android:text="  PANINI"
@@ -22,16 +22,17 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bibite"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fritti" />
 
     <Button
         android:id="@+id/dolce"
         android:layout_width="0dp"
-        android:layout_height="280dp"
+        android:layout_height="0dp"
         android:layout_gravity="start"
         android:layout_marginTop="280dp"
-        android:layout_marginBottom="285dp"
+        android:layout_marginBottom="280dp"
         android:background="@drawable/sfondohome"
         android:drawableRight="@drawable/dolce"
         android:text="  DOLCI"
@@ -40,8 +41,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/panini" />
+        app:layout_constraintTop_toTopOf="@+id/panini"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/bibite"
@@ -57,7 +60,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/panini" />
 
