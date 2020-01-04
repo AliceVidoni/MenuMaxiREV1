@@ -85,19 +85,18 @@
         android:layout_width="145dp"
         android:layout_height="141dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginRight="45dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
         android:layout_marginBottom="26dp"
         android:background="@drawable/myorder"
         app:layout_constraintBottom_toTopOf="@+id/fritti"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="364dp"
-        android:layout_height="61dp"
+        android:layout_width="390dp"
+        android:layout_height="85dp"
         android:layout_marginStart="27dp"
         android:layout_marginLeft="27dp"
         android:layout_marginTop="44dp"
@@ -107,12 +106,24 @@
         android:text="MENU MAXI"
         android:textAlignment="center"
         android:textColor="#0a0a0a"
-        android:textSize="55dp"
+        android:textSize="58dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/fritti"
-        app:layout_constraintEnd_toStartOf="@+id/ordine"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/pagamento"
+        android:layout_width="145dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/pagamento"
+        app:layout_constraintBottom_toTopOf="@+id/fritti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
