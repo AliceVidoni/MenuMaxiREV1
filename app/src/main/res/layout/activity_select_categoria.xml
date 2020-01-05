@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5D033"
-    tools:context=".MainActivity">
+    tools:context=".SelectCategoria">
 
 
     <Button
@@ -120,6 +120,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="26dp"
         android:background="@drawable/pagamento"
+        android:onClick="riepilogoOrdine"
         app:layout_constraintBottom_toTopOf="@+id/fritti"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

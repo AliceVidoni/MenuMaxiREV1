@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/icona"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RichiestaConfermata"></activity>
+        <activity android:name=".RiepilogoOrdine"></activity>
+        <activity android:name=".RichiestaConfermata" />
         <activity android:name=".MetodoPagamento" />
         <activity android:name=".RimuoviPortata" />
         <activity android:name=".OrdineConfermato" />

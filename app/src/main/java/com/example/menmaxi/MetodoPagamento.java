@@ -18,4 +18,9 @@ public class MetodoPagamento extends AppCompatActivity {
         Intent richiesta= new Intent(this, RichiestaConfermata.class);
         startActivity(richiesta);
     }
+
+    public void tornaOrdine(View v) {
+        Intent ordine = new Intent(this, RiepilogoOrdine.class);
+        startActivity(ordine);
+    }
 }
