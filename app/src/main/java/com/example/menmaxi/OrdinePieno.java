@@ -24,8 +24,4 @@ public class OrdinePieno extends AppCompatActivity {
         startActivity(conferma);
     }
 
-    public void rimuoviPortata(View v) {
-        Intent rimuovi = new Intent(this, RimuoviPortata.class);
-        startActivity(rimuovi);
-    }
 }

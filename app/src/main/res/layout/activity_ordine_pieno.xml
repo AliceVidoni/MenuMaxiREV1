@@ -92,23 +92,6 @@
         app:layout_constraintVertical_bias="0.989" />
 
     <Button
-        android:id="@+id/rimuoviPiatto"
-        android:layout_width="0dp"
-        android:layout_height="101dp"
-        android:layout_marginStart="263dp"
-        android:layout_marginLeft="263dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginRight="57dp"
-        android:layout_marginBottom="22dp"
-        android:onClick="rimuoviPortata"
-        android:text="RIMUOVI PORTATA"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/freccias"
-        app:layout_constraintEnd_toStartOf="@+id/confermaOrdine"
-        app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/confermaOrdine"
         android:layout_width="0dp"
         android:layout_height="101dp"
@@ -120,7 +103,6 @@
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/rimuoviPiatto"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 

@@ -6,7 +6,7 @@
 package entities;
 
 import java.io.Serializable;
-import java.util.List;s
+import java.util.List;
 
 /**
  *

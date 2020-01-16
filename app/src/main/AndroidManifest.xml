@@ -15,7 +15,6 @@
         <activity android:name=".RiepilogoOrdine"></activity>
         <activity android:name=".RichiestaConfermata" />
         <activity android:name=".MetodoPagamento" />
-        <activity android:name=".RimuoviPortata" />
         <activity android:name=".OrdineConfermato" />
         <activity android:name=".OrdinePieno" />
         <activity android:name=".OrdineVuoto" />
