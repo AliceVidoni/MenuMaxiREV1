@@ -26,6 +26,7 @@ import java.util.Map;
 import entities.Menu;
 import entities.Piatto;
 import managers.MenuSingleton;
+import web.ServerRequests;
 import web.config.MMApi;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         et = findViewById(R.id.num_tavolo);
 
-        downloadMenu();
+        ServerRequests serverRequests = new ServerRequests(this);
+        serverRequests.downloadMenu();
     }
 
     public void nuovaPagina(View v) {
@@ -48,29 +50,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void downloadMenu() {
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
 
-        JsonObjectRequest request = new JsonObjectRequest(
-                Request.Method.GET,
-                MMApi.URL_MENU,
-                null,
-                new Response.Listener<JSONObject>() {
-                    @Override
-                    public void onResponse(JSONObject response) {
-                        MenuSingleton menuSingleton = MenuSingleton.getInstance();
-                        Gson gson = new Gson();
-                        menuSingleton.setMenu(gson.fromJson(response.toString(), Menu.class));
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Log.e("Response", error.toString());
-                    }
-                }
-        );
-
-        requestQueue.add(request);
-    }
 }
