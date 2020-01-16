@@ -6,13 +6,12 @@
 package entities;
 
 import java.io.Serializable;
-import java.util.List;
+import java.util.List;s
 
 /**
  *
  * @author ciro
  */
-
 public class OrdineStaff implements Serializable {
    private static final long serialVersionUID = 1L;
     
