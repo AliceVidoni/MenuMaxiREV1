@@ -6,6 +6,7 @@
 package entities;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -24,6 +25,10 @@ public class Menu implements Serializable{
 
     public Map<String, List<Piatto>> getPiatti() {
         return menu;
+    }
+
+    public Collection<String> getCategorie() {
+        return menu.keySet();
     }
     
 }
