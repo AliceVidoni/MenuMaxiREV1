@@ -15,7 +15,7 @@ public class OrdineVuoto extends AppCompatActivity {
     }
 
     public void tornaCategoria(View v) {
-        Intent paginaCategorie = new Intent(this, SelectCategoria.class);
+        Intent paginaCategorie = new Intent(this, MainActivity.class);
         startActivity(paginaCategorie);
     }
 }

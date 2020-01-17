@@ -115,6 +115,13 @@ public class Piatto implements Serializable {
         return ingredienti;
     }
 
+    public String getIngredientiString() {
+        String str="";
+        for (Ingrediente i : ingredienti)
+            str=str+i.getNome()+",";
+        return str;
+    }
+
     public void setIngredienti(Collection<Ingrediente> ingredienti) {
         this.ingredienti = ingredienti;
     }

@@ -8,80 +8,123 @@
     tools:context=".MainActivity">
 
 
-    <EditText
-        android:id="@+id/num_tavolo"
-        android:layout_width="157dp"
-        android:layout_height="80dp"
-        android:layout_marginBottom="504dp"
-        android:background="#C1FF8F00"
-        android:text=""
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/frecciad"
-        android:layout_width="130dp"
-        android:layout_height="72dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginBottom="32dp"
-        android:background="#F5D033"
-        android:onClick="nuovaPagina"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/frecciad" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/panini"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="600dp"
-        android:text="Inserire il numero del tavolo:"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="40dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/sfondohome"
+        android:drawableRight="@drawable/hamburger"
+        android:text="  PANINI"
+        android:textAlignment="textStart"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bibite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fritti" />
+
+    <Button
+        android:id="@+id/dolce"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="280dp"
+        android:background="@drawable/sfondohome"
+        android:drawableRight="@drawable/dolce"
+        android:text="  DOLCI"
+        android:textAlignment="textStart"
+        android:textSize="50dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="@+id/panini"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bibite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/sfondohome"
+        android:drawableRight="@drawable/bibite"
+        android:text="  BIBITE"
+        android:textAlignment="textStart"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panini" />
+
+    <Button
+        android:id="@+id/fritti"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="start"
+        android:background="@drawable/sfondohome"
+        android:drawableRight="@drawable/patatine"
+        android:text="  FRITTI"
+        android:textAlignment="textStart"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/panini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordine" />
+
+    <Button
+        android:id="@+id/ordine"
+        android:layout_width="145dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/myorder"
+        app:layout_constraintBottom_toTopOf="@+id/fritti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="534dp"
-        android:layout_height="314dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
+        android:layout_width="390dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginRight="22dp"
-        android:layout_marginBottom="7dp"
-        android:text="BENVENUTI DA MENU MAXI"
+        android:layout_marginEnd="229dp"
+        android:layout_marginRight="229dp"
+        android:layout_marginBottom="32dp"
+        android:text="MENU MAXI"
         android:textAlignment="center"
         android:textColor="#0a0a0a"
-        android:textSize="90dp"
+        android:textSize="58dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="272dp"
-        android:layout_height="249dp"
-        android:layout_marginStart="524dp"
-        android:layout_marginLeft="524dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="275dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/fritti"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.93"
-        app:srcCompat="@drawable/hamburger" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/pagamento"
+        android:layout_width="145dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/pagamento"
+        android:onClick="riepilogoOrdine"
+        app:layout_constraintBottom_toTopOf="@+id/fritti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

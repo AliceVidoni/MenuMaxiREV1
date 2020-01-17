@@ -23,8 +23,8 @@ public class Menu implements Serializable{
         menu = new TreeMap<>();
     }
 
-    public Map<String, List<Piatto>> getPiatti() {
-        return menu;
+    public Collection<Piatto> getPiatti(String categoria) {
+        return menu.get(categoria);
     }
 
     public Collection<String> getCategorie() {

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="218dp"
+        android:layout_height="201dp"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="374dp"
+        android:layout_height="78dp"
+        android:text="nomepiatto"
+        android:textSize="60dp"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ingredienti"
+        android:layout_width="302dp"
+        android:layout_height="83dp"
+        android:layout_weight="1"
+        android:text="ingredienti"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <TextView
+        android:id="@+id/prezzo"
+        android:layout_width="155dp"
+        android:layout_height="85dp"
+        android:text="prezzo"
+        android:textSize="60dp"
+        tools:layout_editor_absoluteX="629dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/quantita"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:background="@android:color/transparent"
+        android:text="1"
+        android:textSize="40dp"
+
+        tools:layout_editor_absoluteX="555dp"
+        tools:layout_editor_absoluteY="118dp"></EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="147dp"
+        android:layout_height="68dp"
+        android:text="ADD"
+        tools:layout_editor_absoluteX="653dp"
+        tools:layout_editor_absoluteY="120dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

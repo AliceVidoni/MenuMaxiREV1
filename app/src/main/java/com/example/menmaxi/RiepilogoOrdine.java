@@ -20,7 +20,7 @@ public class RiepilogoOrdine extends AppCompatActivity {
     }
 
     public void tornaCategoria(View v) {
-        Intent ordine = new Intent(this, SelectCategoria.class);
+        Intent ordine = new Intent(this, MainActivity.class);
         startActivity(ordine);
     }
 }

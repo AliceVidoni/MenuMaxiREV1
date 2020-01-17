@@ -1,54 +1,61 @@
 package com.example.menmaxi;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
-
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
-import com.google.gson.Gson;
-
-import org.json.JSONObject;
-
-import java.util.List;
-import java.util.Map;
-
-import entities.Menu;
-import entities.Piatto;
-import managers.MenuSingleton;
+import android.widget.Button;
 import web.ServerRequests;
-import web.config.MMApi;
 
 public class MainActivity extends AppCompatActivity {
-
-    EditText et;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        et = findViewById(R.id.num_tavolo);
 
-        ServerRequests serverRequests = new ServerRequests(this);
-        serverRequests.downloadMenu();
+        ServerRequests sr=new ServerRequests(this);
+        sr.downloadMenu();
+
+        Button btnPanini=findViewById(R.id.panini);
+        Button btnFritti=findViewById(R.id.fritti);
+        Button btnDolci=findViewById(R.id.dolce);
+        Button btnBibite=findViewById(R.id.bibite);
+        String categoria="";
+        View.OnClickListener gestore=new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String categoria="";
+                switch (v.getId()) {
+                    case R.id.panini:
+                        categoria="Panini";
+                        break;
+                    case R.id.fritti:
+                        categoria="Fritti";
+                        break;
+                    case R.id.bibite:
+                        categoria="Bibite";
+                        break;
+                    case R.id.dolce:
+                        categoria="Dolce";
+                        break;
+                }
+            }
+        };
+
+        btnBibite.setOnClickListener(gestore);
+        btnDolci.setOnClickListener(gestore);
+        btnFritti.setOnClickListener(gestore);
+        btnPanini.setOnClickListener(gestore);
+
+        Intent i=new Intent(this, CategoriaSelezionata.class);
+        i.putExtra("categoria", categoria);
+        startActivity(i);
     }
 
-    public void nuovaPagina(View v) {
-        Intent paginaCategorie = new Intent(this, SelectCategoria.class);
-        //paginaCategorie.putExtra("Numero_Tavolo", num_tavolo);
-        startActivity(paginaCategorie);
+    public void riepilogoOrdine(View v) {
+        Intent ordine = new Intent(this, RiepilogoOrdine.class);
+        startActivity(ordine);
     }
-
-
-
 }
