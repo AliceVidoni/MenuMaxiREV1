@@ -8,71 +8,83 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="86dp"
-        android:layout_height="86dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="125dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        app:layout_constraintEnd_toStartOf="@+id/nome"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
         tools:srcCompat="@drawable/big_jin" />
 
     <TextView
         android:id="@+id/nome"
-        android:layout_width="272dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
         android:text="Panino con porchetta"
-        android:textSize="25dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="115dp" />
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/ingredienti"
-        android:layout_width="395dp"
-        android:layout_height="55dp"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
         android:layout_weight="1"
         android:text="Porchetta,Cheddar,Bacon,melanzane"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="110dp" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.045" />
 
     <TextView
         android:id="@+id/prezzo"
-        android:layout_width="90dp"
+        android:layout_width="75dp"
         android:layout_height="43dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
         android:text="8.00"
         android:textSize="25dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="58dp" />
+        app:layout_constraintBottom_toTopOf="@+id/ingredienti"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@id/nome"
+        app:layout_constraintVertical_bias="0.71" />
 
-    <EditText
-        android:id="@+id/quantita"
-        android:layout_width="83dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="216dp"
-
-        android:layout_marginLeft="216dp"
-        android:background="@android:color/transparent"
-        android:text="1"
-        android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="58dp"></EditText>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="500dp"
+        android:entries="@array/quantita"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        android:textAlignment="center"
+        />
 
     <Button
         android:id="@+id/button"
         android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="388dp"
         android:text="ADD"
         android:textSize="25dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="165dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ingredienti"
+        app:layout_constraintTop_toBottomOf="@+id/ingredienti" />
 </androidx.constraintlayout.widget.ConstraintLayout>

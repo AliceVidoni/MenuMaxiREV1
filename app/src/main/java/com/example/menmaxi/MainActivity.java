@@ -10,12 +10,14 @@ import web.ServerRequests;
 
 public class MainActivity extends AppCompatActivity {
 
+    String categoria;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ServerRequests sr=new ServerRequests(this);
+       ServerRequests sr=new ServerRequests(this);
         sr.downloadMenu();
 
         Button btnPanini=findViewById(R.id.panini);
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnDolci=findViewById(R.id.dolce);
         Button btnBibite=findViewById(R.id.bibite);
         String categoria="";
-        View.OnClickListener gestore=new View.OnClickListener() {
+       /* View.OnClickListener gestore=new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String categoria="";
@@ -47,15 +49,29 @@ public class MainActivity extends AppCompatActivity {
         btnBibite.setOnClickListener(gestore);
         btnDolci.setOnClickListener(gestore);
         btnFritti.setOnClickListener(gestore);
-        btnPanini.setOnClickListener(gestore);
+        btnPanini.setOnClickListener(gestore); */
 
-        Intent i=new Intent(this, CategoriaSelezionata.class);
-        i.putExtra("categoria", categoria);
-        startActivity(i);
+
     }
 
     public void metodoPagamento(View v) {
         Intent in=new Intent (this, MetodoPagamento.class);
         startActivity(in);
+    }
+
+    public void vaiCategoria(View v) {
+        Intent i=new Intent(this, CategoriaSelezionata.class);
+        // i.putExtra("categoria", categoria);
+        startActivity(i);
+    }
+
+    public void vediOrdine(View v) {
+        /* se esiste un ordine
+            Intent in=new Intent(this, OrdinePieno.class);
+            startActivity(in);
+          altrimenti
+            Intent in=new Intent(this, OrdineVuoto.class);
+            startActivity(in);
+         */
     }
 }

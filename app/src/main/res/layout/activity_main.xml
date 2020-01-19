@@ -10,101 +10,121 @@
 
     <Button
         android:id="@+id/panini"
-        android:layout_width="0dp"
-        android:layout_height="145dp"
+        android:layout_width="422dp"
+        android:layout_height="118dp"
         android:layout_gravity="start"
         android:background="@drawable/sfondohome"
         android:drawableRight="@drawable/hamburger"
+        android:onClick="vaiCategoria"
         android:text="  PANINI"
         android:textAlignment="textStart"
         android:textSize="40dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dolce"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="273dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/dolce"
-        android:layout_width="411dp"
-        android:layout_height="155dp"
+        android:layout_width="0dp"
+        android:layout_height="117dp"
         android:layout_gravity="start"
         android:background="@drawable/sfondohome"
         android:drawableRight="@drawable/dolce"
+        android:onClick="vaiCategoria"
         android:text="  DOLCI"
         android:textAlignment="textStart"
         android:textSize="40dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bibite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="418dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/panini" />
 
     <Button
         android:id="@+id/bibite"
         android:layout_width="0dp"
-        android:layout_height="155dp"
+        android:layout_height="132dp"
         android:layout_gravity="start"
         android:background="@drawable/sfondohome"
         android:drawableRight="@drawable/bibite"
+        android:onClick="vaiCategoria"
         android:text="  BIBITE"
         android:textAlignment="textStart"
         android:textSize="40dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="573dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/dolce" />
 
     <Button
         android:id="@+id/fritti"
-        android:layout_width="411dp"
-        android:layout_height="140dp"
+        android:layout_width="409dp"
+        android:layout_height="118dp"
         android:layout_gravity="start"
+        android:layout_marginBottom="360dp"
         android:background="@drawable/sfondohome"
         android:drawableRight="@drawable/patatine"
+        android:onClick="vaiCategoria"
         android:text="  FRITTI"
         android:textAlignment="textStart"
         android:textSize="40dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="133dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toBottomOf="@+id/pagamento" />
 
     <Button
         android:id="@+id/ordine"
-        android:layout_width="100dp"
-        android:layout_height="115dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/myorder"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints"/>
+        android:onClick="vediOrdine"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/pagamento"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="127dp"
-        android:layout_height="117dp"
+        android:layout_width="144dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="121dp"
         android:text="MENU MAXI"
         android:textAlignment="center"
         android:textColor="#0a0a0a"
         android:textSize="38dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toTopOf="@+id/panini"
+        app:layout_constraintEnd_toStartOf="@+id/ordine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/pagamento"
-        android:layout_width="127dp"
-        android:layout_height="115dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="22dp"
         android:background="@drawable/pagamento"
         android:onClick="metodoPagamento"
-        tools:layout_editor_absoluteX="272dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintBottom_toTopOf="@+id/fritti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ordine"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

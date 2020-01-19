@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
+
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
@@ -17,14 +19,19 @@ import managers.MenuSingleton;
 public class CategoriaSelezionata extends AppCompatActivity {
 
     public ListView listView;
+    public TextView txtcategoria;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categoria_selezionata);
+        txtcategoria=findViewById(R.id.textview);
 
-        Bundle datipassati = getIntent().getExtras();
+
+      /*   Bundle datipassati = getIntent().getExtras();
         String categoria = datipassati.getString("categoria");
+
+        txtcategoria.setText(categoria);
 
         Collection<Piatto> piatti=MenuSingleton.getInstance().getMenu().getPiatti(categoria);
 
@@ -162,7 +169,7 @@ public class CategoriaSelezionata extends AppCompatActivity {
         }
 
 
-        /* listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

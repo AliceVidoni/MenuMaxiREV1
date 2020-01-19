@@ -9,48 +9,56 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="45dp"
         android:text="IL TUO ORDINE"
         android:textAlignment="center"
         android:textColor="#0a0a0a"
         android:textSize="50dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="44dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="406dp"
+        android:layout_height="109dp"
         android:text="Non hai ordinato nessuna portata!"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="156dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/freccias"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/unlike"
-        tools:layout_editor_absoluteY="290dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/unlike" />
 
     <ImageButton
         android:id="@+id/freccias"
-        android:layout_width="169dp"
-        android:layout_height="93dp"
+        android:layout_width="157dp"
+        android:layout_height="77dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:background="#F5D033"
         android:onClick="tornaCategoria"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/freccias"
-        tools:layout_editor_absoluteY="604dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/freccias" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

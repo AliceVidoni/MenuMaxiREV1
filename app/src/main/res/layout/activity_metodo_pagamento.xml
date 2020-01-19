@@ -9,62 +9,77 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="390dp"
-        android:layout_height="170dp"
-        android:text="QUALE METODO DI PAGAMENTO VUOI UTILIZZARE??"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="69dp"
+        android:text="SCEGLI IL METODO DI PAGAMENTO"
         android:textAlignment="center"
         android:textColor="#0a0a0a"
         android:textSize="40dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintBottom_toTopOf="@+id/contanti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
         android:id="@+id/carta"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="120dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
         android:background="@drawable/icons8_carta_in_uso_100"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/contanti"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.417"
-        tools:layout_editor_absoluteX="61dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintVertical_bias="0.417" />
 
     <Button
         android:id="@+id/contanti"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="72dp"
         android:layout_marginRight="72dp"
+        android:layout_marginBottom="46dp"
         android:background="@drawable/icons8_dollaro_americano_100"
+        app:layout_constraintBottom_toTopOf="@+id/conferma"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="255dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintStart_toEndOf="@+id/carta"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageButton
         android:id="@+id/freccias"
-        android:layout_width="190dp"
-        android:layout_height="88dp"
+        android:layout_width="147dp"
+        android:layout_height="84dp"
         android:background="#F5D033"
         android:onClick="tornaCategoria"
-        app:srcCompat="@drawable/freccias"
-        tools:layout_editor_absoluteY="614dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conferma"
+        app:srcCompat="@drawable/freccias" />
 
     <Button
         android:id="@+id/conferma"
-        android:layout_width="190dp"
-        android:layout_height="88dp"
+        android:layout_width="203dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="60dp"
         android:onClick="confermaRichiesta"
         android:text="CONFERMA"
         android:textSize="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/freccias"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="422dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toBottomOf="@+id/contanti" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
