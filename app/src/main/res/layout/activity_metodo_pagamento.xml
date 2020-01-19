@@ -48,7 +48,7 @@
         android:layout_width="190dp"
         android:layout_height="88dp"
         android:background="#F5D033"
-        android:onClick="tornaOrdine"
+        android:onClick="tornaCategoria"
         app:srcCompat="@drawable/freccias"
         tools:layout_editor_absoluteY="614dp"
         tools:ignore="MissingConstraints"/>

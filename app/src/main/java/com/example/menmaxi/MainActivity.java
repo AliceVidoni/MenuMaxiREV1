@@ -54,5 +54,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-
+    public void metodoPagamento(View v) {
+        Intent in=new Intent (this, MetodoPagamento.class);
+        startActivity(in);
+    }
 }

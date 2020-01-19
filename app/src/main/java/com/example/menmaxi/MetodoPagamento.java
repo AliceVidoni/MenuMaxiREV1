@@ -18,5 +18,8 @@ public class MetodoPagamento extends AppCompatActivity {
         Intent richiesta= new Intent(this, RichiestaConfermata.class);
         startActivity(richiesta);
     }
-
+    public void tornaCategoria(View v) {
+        Intent richiesta= new Intent(this, MainActivity.class);
+        startActivity(richiesta);
+    }
 }
