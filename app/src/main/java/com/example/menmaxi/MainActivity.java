@@ -54,8 +54,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void riepilogoOrdine(View v) {
-        Intent ordine = new Intent(this, RiepilogoOrdine.class);
-        startActivity(ordine);
-    }
+
 }
