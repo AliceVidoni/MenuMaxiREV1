@@ -7,103 +7,78 @@
     android:background="#F5D033"
     tools:context=".RiepilogoOrdine">
 
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="744dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginBottom="862dp"
+        android:layout_marginTop="16dp"
         android:text="RIEPILOGO ORDINE"
         android:textAlignment="center"
         android:textColor="#0a0a0a"
-        android:textSize="70dp"
+        android:textSize="40dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/paga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <ListView
         android:id="@+id/listaOrdine"
-        android:layout_width="693dp"
-        android:layout_height="571dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginLeft="17dp"
-        android:layout_marginTop="223dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginRight="17dp"
-        android:layout_marginBottom="357dp"
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
         android:background="#ffc414"
-        app:layout_constraintBottom_toTopOf="@+id/freccias"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="106dp"
+        tools:ignore="MissingConstraints"/>
 
     <ImageButton
         android:id="@+id/freccias"
         android:layout_width="169dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="632dp"
-        android:layout_marginRight="632dp"
-        android:layout_marginBottom="36dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="16dp"
         android:background="#F5D033"
         android:onClick="tornaCategoria"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listaOrdine"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/freccias" />
 
     <TextView
         android:id="@+id/tot"
-        android:layout_width="283dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="297dp"
-        android:layout_marginLeft="297dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginRight="13dp"
-        android:layout_marginBottom="331dp"
+        android:layout_width="259dp"
+        android:layout_height="47dp"
         android:text="PREZZO TOTALE:"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/prezzoTotale"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.92" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="520dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/prezzoTotale"
-        android:layout_width="83dp"
-        android:layout_height="61dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginRight="53dp"
-        android:layout_marginBottom="370dp"
+        android:layout_width="104dp"
+        android:layout_height="43dp"
         android:text="0.00"
         android:textColor="#000000"
         android:textSize="35dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tot"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.989" />
+        tools:layout_editor_absoluteX="259dp"
+        tools:layout_editor_absoluteY="520dp"
+        tools:ignore="MissingConstraints"/>
 
     <Button
         android:id="@+id/paga"
-        android:layout_width="192dp"
-        android:layout_height="79dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginRight="88dp"
-        android:layout_marginBottom="151dp"
+        android:layout_width="188dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:onClick="metodoPagamento"
         android:text="PAGA"
         android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        tools:layout_editor_absoluteY="622dp"
+        tools:ignore="MissingConstraints"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

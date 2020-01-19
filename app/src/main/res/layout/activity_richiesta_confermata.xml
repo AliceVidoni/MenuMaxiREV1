@@ -10,43 +10,43 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="785dp"
-        android:layout_height="281dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
         android:text="RICHIESTA DI CONTO CONFERMATA"
         android:textAlignment="center"
         android:textColor="#0a0a0a"
-        android:textSize="80dp"
+        android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="436dp"
+        android:layout_marginTop="176dp"
         android:layout_marginBottom="21dp"
         android:text="Lo staff ha appena ricevuto la richiesta di conto, un cameriere raggiungerà il suo tavolo a breve!"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="45dp"
+        android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
     <ImageView
         android:id="@+id/img"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@drawable/pushnotifications"
-        tools:layout_editor_absoluteX="334dp"
-        tools:layout_editor_absoluteY="647dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="449dp"
+        tools:ignore="MissingConstraints"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
