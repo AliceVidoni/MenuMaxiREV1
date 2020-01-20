@@ -28,7 +28,7 @@ public class CategoriaSelezionata extends AppCompatActivity {
         txtcategoria=findViewById(R.id.textview);
 
 
-      /*   Bundle datipassati = getIntent().getExtras();
+      /* Bundle datipassati = getIntent().getExtras();
         String categoria = datipassati.getString("categoria");
 
         txtcategoria.setText(categoria);
